@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Задача 6</h1>
+   <p> З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо
+		та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.</p>
+      <script>
+         
+		//Задача 6. З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+
+		//Крок №0 - Введення позначень 
+		//вартість першого товару - priceFirstProduct
+		//вартість другого товару - priceSecondProduct
+		//вартість третього товару - priceThridProduct
+		//кількість першого товару - quantityFirstProduct
+		//кількість другого товару - quantitySecondProduct
+		//кількість третього товару - quantityThridProduct
+		//загльна вартість першого товару - firstTotalPrice
+		//загльна вартість другого товару - secondTotalPrice
+		//загльна вартість третього товару - thridTotalPrice
+		//загальна вартість товару - totalPrice
+
+		//Крок №1 Вводимо необхідні зміні
+		let priceFirstProduct = parseFloat(prompt('Вкажіть вартість піци?', '0'))
+		let priceSecondProduct = parseFloat(prompt('Вкажіть вартість пива?', '0'))
+		let priceThridProduct = parseFloat(prompt('Вкажіть вартість снеків?', '0'))
+		let quantityFirstProduct = parseInt(prompt('Вкажіть кількість піци?', '0'))
+		let quantitySecondProduct = parseInt(prompt('Вкажіть кількість пива?', '0'))
+		let quantityThridProduct = parseInt(prompt('Вкажіть кількість снеків?', '0'))
+
+		//Крок №2 Обчислюємо результат
+		let firstTotalPrice = quantityFirstProduct * priceFirstProduct
+		let secondTotalPrice = quantitySecondProduct * priceSecondProduct
+		let thridTotalPrice = quantityThridProduct * priceThridProduct
+		let totalPrice = firstTotalPrice + secondTotalPrice + thridTotalPrice
+
+		//Крок №3 Виводимо результат
+		document.write(`
+<h4>ТОВ Супер Магаз</h4>
+<h4>м.Найкраще </h4>
+<h5>Фіскальний чек №140039898</h5>
+<table>
+	<tr>
+		<th>назва товару</th>
+		<th>к-сть од.</th>
+		<th>вартість</th>
+	</tr>
+	<tr>
+		<th>Піца</th>
+		<th>${quantityFirstProduct} од.</th>
+		<th>${firstTotalPrice.toFixed(2)} грн</th>
+	<tr>
+		<th>Пиво</th>
+		<th>${quantitySecondProduct} од.</th>
+		<th>${secondTotalPrice.toFixed(2)} грн</th>
+	</tr>
+		<tr>
+			<th>Снеки</th>
+			<th>${quantityThridProduct} од.</th>
+			<th> ${thridTotalPrice.toFixed(2)} грн</th>
+		</tr>
+		<th>Загальна сума ${totalPrice.toFixed(2)} грн</th>
+</table>
+<div>***Дякуємо!***</div>
+`)
+
+	
+      </script>
+      <h4>ТОВ Файно маркет</h4>
+      <h4>м.Веселівка </h4>
+      <h5>Фіскальний чек №140046543</h5>
+    
+   </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Задача 1</h1>
+   <p>Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці
+	</p>
+   <script>
+
+		// Задача 1. Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці
+
+		// Крок№ 0 - Введення позначень
+		//перше дійсне число - firstNum
+		//друге дійсне число - secondNum
+		//знайти суму - findSum
+		//знайти добуток - findProduct
+		//знайти частку - findFraction
+
+		// Крок №1 - Вводимо необхідні зміні (firstNum),(secondNum)
+		let firstNum = parseFloat(prompt('Введіть перше дісне число', '0'))
+		let secondNum = parseFloat(prompt('Введіть друге дійсне число', '0'))
+
+		// Крок №2 - Обчислюємо результат
+		let findSum = firstNum + secondNum
+		let findProduct = firstNum * secondNum
+		let findFraction = firstNum / secondNum
+
+		// Крок №3 - Виведення результатів
+		document.write(`
+			<table border="2px">
+				<tr>
+					<th>Сума двох дісних чисел =</th>
+					<td>${findSum.toFixed(2)}</td>
+				</tr>
+				<tr>
+					<th>Добуток двох дісних чисел =</th>
+					<td>${findProduct.toFixed(2)}</td>
+				</tr>
+				<tr>
+					<th>Частка двох дісних чисел =</th>
+					<td>${findFraction.toFixed(2)}</td>
+				</tr>
+
+`)
+   </script>
+</body>
+</html>

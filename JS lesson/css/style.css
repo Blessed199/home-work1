@@ -1,0 +1,44 @@
+
+
+
+
+.header {
+   background-color: #1b1c20;
+   padding: 20px 0px 20px 0px;
+}
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0px 15px 0px 30px;
+}
+
+.header_title {
+   color: white;
+}
+.header_subtitle {
+   color: yellow;
+}
+.main {
+   background-color: #2c2d32;
+   color: #fff;
+   padding: 30px 0px;
+   flex: 1 1 auto;
+}
+.main_list {
+   border-left: 1px solid #ffffff86;
+   padding-left: 30px;
+}
+.maim_link {
+   padding-bottom: 15px;
+}
+.main_task {
+   color: #fff;
+}
+.footer {
+   padding: 20px 0px;
+   display: block;
+   background-color: #1b1c20;
+}
+.footer_title {
+   color: yellow;
+}

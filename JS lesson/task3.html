@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Задача 3</h1>
+   <p> Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості).</p>
+   <script>
+
+		//Задача 3. Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості).
+
+		//Крок №0 - Введення позначень
+		//вартість одиниці товару - onePriceProduct
+		//кількість товару - numberProduct
+		//загальна вартість товару - totalPriceProduct
+		//ПДВ від загальної суми - vatpergentageTotalPrice
+		//відсоток ПДВ - VAT_PERGENTAGE
+
+		//Крок №1 - Вводимо необхідні зміні
+		let onePriceProduct = parseFloat(prompt('Введіть вартість 1 товару', '0'))
+		let numberProduct = parseInt(prompt('Введіть кількість товару', '0'))
+
+		const VAT_PERGENTAGE = 5
+
+		//Крок № 2 - Обчислюємо результат
+		let totalPriceProduct = numberProduct * onePriceProduct
+		let vatpergentageTotalPrice = totalPriceProduct * VAT_PERGENTAGE / 100
+
+		// Крок №3 - Виведення результатів
+		document.write(`Загальна вартість товару = ${totalPriceProduct} <br>`)
+		document.write(`5% ПДВ від загальної вартості = ${vatpergentageTotalPrice} <br>`)
+
+
+
+
+
+	
+   </script>
+</body>
+</html>

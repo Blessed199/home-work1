@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Задача 5</h1>
+   <p>Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.</p>
+   <script>
+
+		//Задача 5. Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.
+
+		//Крок №0 - Введення позначень
+		//кількість секунд - totalSecond
+		//кількість секунд в хвилині - quantitySecondsOfMimutes
+		//кількість хвилин в годині - quantityMimutesOfHours
+
+		//Крок №1 Вводимо необхідні зміні
+		let totalSecond = parseFloat(prompt('Введіть кількість секунд, що пройшло від початку доби', '0'))
+		const quantitySecondsOfMimutes = 60
+		const quantityMimutesOfHours = 60
+
+		//Крок №2 Обчислюємо результат
+		let totalMinutes = totalSecond / quantitySecondsOfMimutes
+		let totalHours = Math.floor(totalMinutes / quantityMimutesOfHours)
+		let remainderMinutes = Math.floor(totalMinutes % quantityMimutesOfHours)
+		let remainedSeconds = totalSecond % quantitySecondsOfMimutes
+
+		//Крок №3 Виведення результатів
+		document.write(`${totalSecond} секунд буде дорівнювати ${totalHours} год ${remainderMinutes} хв ${remainedSeconds} сек <br>`);
+	
+   </script>
+</body>
+</html>
